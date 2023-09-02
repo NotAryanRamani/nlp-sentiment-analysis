@@ -1,4 +1,6 @@
- # <center> Sentiment Analysis NLP Project  </center> 
+ # <div align='center'> Sentiment Analysis NLP Project </div> 
+
+---
 
 ## About the project
 This is a End to End Machine Learning project on a Tweets Dataset, the task is to determine the sentiment of a tweet as positive, neutral or negative.
@@ -24,6 +26,8 @@ The dataset is named Tweet Sentiment Extraction which is available on Kaggle and
 ### Chronological Updates
 
 - **September 2, 2023**: Created github repository, README.md file, environment, setup.py file  and Project Structure
+
+---
 
 ### Contributors
 The project is contributed by myself, Aryan Ramani. You can contact me at:
