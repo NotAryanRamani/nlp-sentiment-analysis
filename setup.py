@@ -4,6 +4,7 @@
 from setuptools import find_packages, setup
 from typing import List
 
+
 def get_requirements(file:str)->List[str]:
     requirements = []
     with open(file) as file_:
@@ -14,6 +15,7 @@ def get_requirements(file:str)->List[str]:
             requirements.remove('-e .')
 
     return requirements
+
 
 setup(
     name = 'NLP_Sentiment_Analysis',
