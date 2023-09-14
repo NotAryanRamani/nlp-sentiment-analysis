@@ -8,7 +8,7 @@ This is a End to End Machine Learning project on a Tweets Dataset, the task is t
 The project will follow the following steps:
 - [x] Setting Up Github Repository and Project Structure
 - [x] Custom Exception Handling and Logging
-- [ ] Exploratory Data Analysis and Model Training 
+- [x] Exploratory Data Analysis
 - [ ] Data Ingestion and Data Transformation Implementation
 - [ ] Model Training and Evaluation
 - [ ] Flask Web App and API Development
@@ -19,15 +19,15 @@ The project will follow the following steps:
 ## About the Data Set
 The dataset is named Tweet Sentiment Extraction which is available on Kaggle and You can get the data set [here](https://www.kaggle.com/competitions/tweet-sentiment-extraction).
 
-> *Stay tuned for further updates on Dataset Information*
-
 ---
 
 ### Chronological Updates
 
 - **September 2, 2023**: Created github repository, README.md file, environment, setup.py file  and Project Structure
 
-- **September 3, 2023**: Created Custom Exception class and Logging Configurations
+- **September 3, 2023**: Created Custom Exception class and Logging Configurations and Basic EDA
+
+- **September 14, 2023** : Created Data Ingestion Module
 
 ---
 
