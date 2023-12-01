@@ -9,7 +9,7 @@ The project will follow the following steps:
 - [x] Setting Up Github Repository and Project Structure
 - [x] Custom Exception Handling and Logging
 - [x] Exploratory Data Analysis
-- [ ] Data Ingestion and Data Transformation Implementation
+- [x] Data Ingestion and Data Transformation Implementation
 - [ ] Model Training and Evaluation
 - [ ] Flask Web App and API Development
 - [ ] Deployment on Cloud Server with CI/CD Pipeline
@@ -18,6 +18,10 @@ The project will follow the following steps:
 
 ## About the Data Set
 The dataset is named Tweet Sentiment Extraction which is available on Kaggle and You can get the data set [here](https://www.kaggle.com/competitions/tweet-sentiment-extraction).
+
+It contains 4 features `textId`, `text`, `selected_text` and `sentiment`
+
+The data has `27481` entries/row/samples.
 
 ---
 
@@ -28,6 +32,8 @@ The dataset is named Tweet Sentiment Extraction which is available on Kaggle and
 - **September 3, 2023**: Created Custom Exception class and Logging Configurations and Basic EDA
 
 - **September 14, 2023** : Created Data Ingestion Module
+
+- **December 1, 2023** : Created Data Transformation Module
 
 ---
 

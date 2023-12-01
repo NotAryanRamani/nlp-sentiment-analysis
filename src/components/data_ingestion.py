@@ -8,6 +8,7 @@ from dataclasses import dataclass
 
 from src.exception import CustomException
 from src.logger import logging
+from src.components.data_transformation import DataTransformation, DataTransformationConfig
 
 
 @dataclass
@@ -28,6 +29,7 @@ class DataIngestion:
             df = pd.read_csv('src/notebook/data/train.csv')
             logging.info('Read data')
             os.makedirs(os.path.dirname(self.ingestion_config.data_path), exist_ok=True)
+            df.dropna(inplace=True)
             df.to_csv(self.ingestion_config.data_path, index=False, header=True)            
 
             logging.info('Splitting data in Train and Test')
@@ -44,3 +46,13 @@ class DataIngestion:
             )
         except Exception as e:
             raise CustomException(e, sys)
+
+# This main function to just make sure the code writing till now is working  
+'''
+if __name__ == '__main__':
+    obj = DataIngestion()
+    train_data_path, test_data_path = obj.read_data()
+    print(train_data_path, test_data_path)
+    data_transformation_obj = DataTransformation()
+    train_data, test_data, preprocess_path = data_transformation_obj.preprocess(train_data_path, test_data_path)
+'''
