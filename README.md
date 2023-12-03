@@ -35,6 +35,8 @@ The data has `27481` entries/row/samples.
 
 - **December 1, 2023** : Created Data Transformation Module
 
+- **December 2, 2023** : Created and evaluted models in jupyter notebook
+
 ---
 
 ### Contributors
