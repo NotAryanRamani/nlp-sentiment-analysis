@@ -10,7 +10,7 @@ The project will follow the following steps:
 - [x] Custom Exception Handling and Logging
 - [x] Exploratory Data Analysis
 - [x] Data Ingestion and Data Transformation Implementation
-- [ ] Model Training and Evaluation
+- [x] Model Training and Evaluation
 - [ ] Flask Web App and API Development
 - [ ] Deployment on Cloud Server with CI/CD Pipeline
 
@@ -25,7 +25,26 @@ The data has `27481` entries/row/samples.
 
 ---
 
-### Chronological Updates
+# Models Trained 
+1. **Logistic Regression**
+To import the model use the following code: 
+`from sklearn.linear_model import LogisticRegression`
+
+Parameters used:
+`LogisticRegression(
+    max_iter=100
+)`
+
+Accuracy Achieved:
+`y_pred = model.predict(X_test)
+score = accuracy_score(y_true, y_pred)`
+*Output*:{'LogisticRegression': 0.8535096231602782}
+
+2. **Multinomial Naive Bayes**
+
+---
+
+## Chronological Updates
 
 - **September 2, 2023**: Created github repository, README.md file, environment, setup.py file  and Project Structure
 
@@ -36,6 +55,8 @@ The data has `27481` entries/row/samples.
 - **December 1, 2023** : Created Data Transformation Module
 
 - **December 2, 2023** : Created and evaluted models in jupyter notebook
+
+- **December 4, 2023** : Implemented Modular coding to develop LogisticRegression model and Multinomial Naive Bayes
 
 ---
 

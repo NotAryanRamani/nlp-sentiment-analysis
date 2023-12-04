@@ -8,7 +8,9 @@ from dataclasses import dataclass
 
 from src.exception import CustomException
 from src.logger import logging
-from src.components.data_transformation import DataTransformation, DataTransformationConfig
+from src.components.data_transformation import DataTransformation
+from src.components.model_training import ModelTrainer
+
 
 
 @dataclass
@@ -48,11 +50,12 @@ class DataIngestion:
             raise CustomException(e, sys)
 
 # This main function to just make sure the code writing till now is working  
-'''
+
 if __name__ == '__main__':
     obj = DataIngestion()
     train_data_path, test_data_path = obj.read_data()
     print(train_data_path, test_data_path)
     data_transformation_obj = DataTransformation()
     train_data, test_data, preprocess_path = data_transformation_obj.preprocess(train_data_path, test_data_path)
-'''
+    model_trainer_obj = ModelTrainer()
+    model_trainer_obj.initiate_training(train_data, test_data)
