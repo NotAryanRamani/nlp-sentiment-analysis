@@ -26,21 +26,32 @@ The data has `27481` entries/row/samples.
 ---
 
 # Models Trained 
-1. **Logistic Regression**
-To import the model use the following code: 
-`from sklearn.linear_model import LogisticRegression`
+1. **Logistic Regression**  
+    To import the model use the following code:   
+    `from sklearn.linear_model import LogisticRegression`
 
-Parameters used:
-`LogisticRegression(
-    max_iter=100
-)`
+    Parameters used:  
+    `LogisticRegression(  
+        max_iter=100  
+    )`
 
-Accuracy Achieved:
-`y_pred = model.predict(X_test)
-score = accuracy_score(y_true, y_pred)`
-*Output*:{'LogisticRegression': 0.8535096231602782}
+    Accuracy Achieved:  
+    `y_pred = model.predict(X_test)  
+    score = accuracy_score(y_true, y_pred)`  
+    *Output*:  
+    {'LogisticRegression': 0.8535096231602782}
 
 2. **Multinomial Naive Bayes**
+    To import the model use the following code:   
+    `from sklearn.naive_bayes import MultinomialNB`
+
+    *No paramerters used*
+
+    Accuracy Achieved:  
+    `y_pred = model.predict(X_test)  
+    score = accuracy_score(y_true, y_pred)`  
+    *Output*:  
+    {'MultinomialNB': 0.7907569141193596}
 
 ---
 
