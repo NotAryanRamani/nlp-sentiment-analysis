@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" />
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="{{ url_for('predict') }}">
+            <label for="user_input" class="my_label">Enter Text:  </label>
+            <textarea name="user_input" id="user_input" cols="30" rows="5" placeholder="Enter Text...." class="my_text_area">{{input_text}}</textarea>
+            <br><br><br>
+            <center><button type="submit" class="sub_button">Submit</button></center>
+        </form>  
+    </div>
+    <div class="prediction">
+        Prediction : <br>
+         {{ prediction_text }}
+    </div>
+    
+</body>
+</html>

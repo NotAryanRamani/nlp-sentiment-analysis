@@ -41,7 +41,7 @@ The data has `27481` entries/row/samples.
     *Output*:  
     {'LogisticRegression': 0.8535096231602782}
 
-2. **Multinomial Naive Bayes**
+2. **Multinomial Naive Bayes**  
     To import the model use the following code:   
     `from sklearn.naive_bayes import MultinomialNB`
 
@@ -68,6 +68,8 @@ The data has `27481` entries/row/samples.
 - **December 2, 2023** : Created and evaluted models in jupyter notebook
 
 - **December 4, 2023** : Implemented Modular coding to develop LogisticRegression model and Multinomial Naive Bayes
+
+- **December 5, 2023** : Developed Prediction Pipeline and Flask App
 
 ---
 

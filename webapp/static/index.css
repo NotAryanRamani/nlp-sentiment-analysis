@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    translate: 0% 50%;
+}
+
+.my_label{
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Courier', monospace;
+    position: relative;
+    translate: 0px -50%;
+}
+
+.my_text_area{
+    resize: vertical;
+}
+
+.sub_button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease;
+}
+  
+  
+.sub_button:hover {
+    background-color: #45a049; 
+}
+
+.prediction{
+    position: relative;
+    translate: 0% 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px; 
+    color: #103539;
+}
