@@ -13,7 +13,10 @@ def home_page():
 
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
+    predictions = ''
+    text = ''
     if request.method == 'POST':
         text = request.form.get('user_input')
         predictions = predict_model.get_predictions(text)
     return render_template('index.html', prediction_text=predictions, input_text=text)
+
