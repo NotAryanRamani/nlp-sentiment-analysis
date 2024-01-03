@@ -19,6 +19,8 @@ jobs:
         context: .
         push: true
         tags: ghcr.io/${{ github.repository }}/sentiment-analysis:latest
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
 
   deploy:
     needs: build
@@ -29,5 +31,5 @@ jobs:
       uses: akhileshns/heroku-deploy@v3.12.12
       with:
         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-        heroku_app_name: your-heroku-app-name
+        heroku_app_name: sentiment-analysis
         docker_image: ghcr.io/${{ github.repository }}/sentiment-analysis:latest
