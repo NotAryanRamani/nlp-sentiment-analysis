@@ -11,8 +11,8 @@ The project will follow the following steps:
 - [x] Exploratory Data Analysis
 - [x] Data Ingestion and Data Transformation Implementation
 - [x] Model Training and Evaluation
-- [ ] Flask Web App and API Development
-- [ ] Deployment on Cloud Server with CI/CD Pipeline
+- [x] Flask Web App and API Development
+- [x] Deployment on Cloud Server with CI/CD Pipeline
 
 ---
 
@@ -70,6 +70,8 @@ The data has `27481` entries/row/samples.
 - **December 4, 2023** : Implemented Modular coding to develop LogisticRegression model and Multinomial Naive Bayes
 
 - **December 5, 2023** : Developed Prediction Pipeline and Flask App
+
+- **January 4, 2024** : Developed API and hosted on Heroku using Docker and Github actions
 
 ---
 

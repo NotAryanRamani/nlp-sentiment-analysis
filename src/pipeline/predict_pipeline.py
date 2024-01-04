@@ -20,12 +20,12 @@ class PredictPipelineConfig():
 
 class PredictPipeline():
     def __init__(self) -> None:
-        print('loading_models')
+        # print('loading_models')
         self.config = PredictPipelineConfig()
         self.vectorizer = pickle.load(open(self.config.vectorizer_path, 'rb'))
         self.log_clf = pickle.load(open(self.config.logistic_reg_path, 'rb'))
         self.mulNB_clf = pickle.load(open(self.config.multinomialNB_path, 'rb'))
-        print('models_loaded')
+        # print('models_loaded')
 
     def get_vertorized_array(self, text:str):
         text = text.lower()
